@@ -16,8 +16,8 @@ const API_BASE = "https://data.seattle.gov/resource/tazs-3rd5.json";
 
 // Pagination: rows per API request (Socrata allows up to 50k; 5000 is a safe per-request size)
 const PAGE_SIZE = 5000;
-// Max total rows to fetch for one "Load data" (keeps browser responsive; increase if needed)
-const MAX_TOTAL_ROWS = 50000;
+// Max total rows to fetch for one "Load data" (keeps API load and browser responsive)
+const MAX_TOTAL_ROWS = 5000;
 
 // How many points to render on the map (sampled after filtering to keep the map responsive)
 const MAP_MAX_POINTS = 2000;
